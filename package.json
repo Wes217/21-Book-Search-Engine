@@ -6,6 +6,7 @@
   "scripts": {
     "start": "concurrently \"node server/server.js\" \"cd client && npm run dev\"",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "apollo":"node server/server.js --ignore client",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
