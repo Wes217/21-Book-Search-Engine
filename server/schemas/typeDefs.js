@@ -1,6 +1,6 @@
 const typeDefs = `
   type User {
-    __id: ID!
+    _id: ID!
     username: String!
     email: String!
     bookCount: String!
