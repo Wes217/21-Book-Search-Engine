@@ -18,20 +18,3 @@ query Query {
     }
   }
 `
-export const REMOVE_BOOK = gql`
-mutation Mutation($bookId: ID!) {
-    removeBook(bookId: $bookId) {
-      _id
-      username
-      email
-      savedBooks {
-        bookId
-        title
-        authors
-        description
-        image
-        link
-      }
-    }
-  }
-`
